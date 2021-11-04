@@ -1,2 +1,2 @@
 # -Algorithms
-Data Structures in 
+Data Structures in Javascript
