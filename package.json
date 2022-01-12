@@ -1,0 +1,33 @@
+{
+  "name": "algorithms",
+  "version": "1.0.0",
+  "description": "",
+  "main": "map.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aizamvh/Javascript-Algorithms.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "jest": {
+    "verbose": false
+  },
+  "bugs": {
+    "url": "https://github.com/aizamvh/Javascript-Algorithms/issues"
+  },
+  "homepage": "https://github.com/aizamvh/Javascript-Algorithms#readme",
+  "devDependencies": {
+    "@types/treeify": "^1.0.0",
+    "jest": "^27.3.1"
+  },
+  "dependencies": {
+    "@types/crypto-js": "^4.0.2",
+    "buffer-reverse": "^1.0.1",
+    "crypto-js": "^4.1.1",
+    "treeify": "^1.1.0"
+  }
+}

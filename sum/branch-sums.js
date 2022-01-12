@@ -1,15 +1,26 @@
+const { BinaryTreeNode, BinaryTree, exampleTree } = require("../data-structures/binary-tree");
 
+const branchSums = (root) => {
+  let sums = []
+  if (root === null) return
 
-const branch = {}
+  calculateBranchSums(root, 0, sums)
+}
 
-branch.right = 3
-branch.right.right = 7
-branch.right.left = 6
-branch.left = 2
-branch.left.right = 5
-branch.left.right.left = 10
-branch.left.left = 4
-branch.left.left = 8
-branch.left.right = 9
+const calculateBranchSums = (node, branchSum, sums) => {
 
-console.log(branch);
+  if(node === null) return;
+
+  const newBranchSum = branchSum + node.value;
+  if(node.right === null && node.left == null) {
+    sums.push(newBranchSum)
+    return;
+  }
+
+  calculateBranchSums(node.right, newBranchSum, sums)
+  calculateBranchSums(node.left, newBranchSum, sums)
+}
+
+const tree = exampleTree;
+const result = branchSums(tree)
+console.log(result);
